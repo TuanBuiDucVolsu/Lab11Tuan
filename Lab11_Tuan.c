@@ -5,9 +5,9 @@
 //Извините,потому что мой Dev-C++ не поддерживает написание русского языка 
 struct AEROFLOT                                 //3 объекта в структуре
 {
-    char kuda[30];
-    int num;
-    char type[15];
+    char kuda[30];                              // Пункт назначения
+    int num;                                    // Номер самолета
+    char type[15];                              // Tип самолета
 };
 typedef struct AEROFLOT FLY;
 
@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
     int i,n;
     FLY fly[n];
     do{                                           //Если число меньше 0, оно будет введено снова
-    printf("Enter the number of flights: "); 
+        printf("Enter the number of flights: "); 
 	scanf("%d", &n);
     }while(n <= 0);
     fflush(stdin);
